@@ -1,0 +1,24 @@
+-- database: ./base.db
+
+INSERT INTO Producto (nombre, precio, categoria) VALUES
+('Cafe Americano', 2.50, 'Bebidas Calientes'),
+('Cappuccino', 3.50, 'Bebidas Calientes'),
+('Latte', 3.80, 'Bebidas Calientes'),
+('Espresso', 2.00, 'Bebidas Calientes'),
+('Mocha', 4.00, 'Bebidas Calientes'),
+('Te Verde', 2.20, 'Bebidas Calientes'),
+('Chocolate Caliente', 3.00, 'Bebidas Calientes'),
+('Jugo Natural', 3.50, 'Bebidas Frias'),
+('Smoothie', 4.50, 'Bebidas Frias'),
+('Limonada', 2.50, 'Bebidas Frias'),
+('Croissant', 2.80, 'Panaderia'),
+('Brownie', 3.20, 'Postres'),
+('Cheesecake', 4.50, 'Postres'),
+('Galletas', 1.80, 'Postres'),
+('Sandwich de Pollo', 5.50, 'Comida'),
+('Ensalada Cesar', 6.00, 'Comida'),
+('Panini', 5.00, 'Comida'),
+('Muffin', 2.50, 'Panaderia'),
+('Donas', 2.00, 'Panaderia'),
+('Waffle', 4.80, 'Postres');
+

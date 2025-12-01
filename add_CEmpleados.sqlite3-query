@@ -1,0 +1,33 @@
+-- database: ./base.db
+
+
+INSERT INTO Empleado (nombre, cargo) VALUES
+('Roberto Moreno', 'Barista'),
+('Laura Vega', 'Cajera'),
+('Javier Salazar', 'Gerente'),
+('Patricia Nunez', 'Barista'),
+('Fernando Silva', 'Cajero'),
+('Claudia Rojas', 'Mesera'),
+('Ricardo Medina', 'Barista'),
+('Monica Paredes', 'Cajera'),
+('Esteban Delgado', 'Cocinero'),
+('Daniela Molina', 'Mesera'),
+('Alejandro Rios', 'Barista');
+
+
+INSERT INTO Empleado (nombre, cargo, telefono) VALUES
+('Veronica Campos', 'Cajera', '555-3344'),
+('Raul Guerrero', 'Supervisor', '555-5566'),
+('Teresa Navarro', 'Barista', '555-7788'),
+('Hugo Peña', 'Mesero', '555-9900'),
+('Gloria Marin', 'Cajera', '555-2211'),
+('Oscar Reyes', 'Barista', '555-4433'),
+('Adriana Luna', 'Mesera', '555-6655'),
+('Victor Diaz', 'Cocinero', '555-8877'),
+('Sandra Ibarra', 'Cajera', '555-0099'),
+('Pablo Torres', 'Barista', '555-3345'),
+('Natalia Flores', 'Mesera', '555-5567');
+
+
+
+
