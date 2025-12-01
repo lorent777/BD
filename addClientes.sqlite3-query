@@ -1,0 +1,26 @@
+-- database: c:\Users\elizabeth.lopez\BaseDeDatos\BD\base.db
+
+INSERT INTO Cliente (nombre, telefono) VALUES
+('María González', '0991234567'),
+('Juan Pérez', '0987654321'),
+('Ana Rodríguez', '0995551234'),
+('Carlos Mendoza', '0981234567'),
+('Lucía Fernández', '0993456789'),
+('Pedro Sánchez', '0989876543'),
+('Sofía Castro', '0992345678'),
+('Diego Torres', '0986543210'),
+('Valentina Ruiz', '0994567890'),
+('Andrés López', '0988765432'),
+('Camila Ortiz', '0990123456'),
+('Miguel Herrera', '0985432109'),
+('Isabella Morales', '0997654321'),
+('Gabriel Romero', '0983210987'),
+('Martina Vargas', '0996789012'),
+('Sebastián Cruz', '0982109876'),
+('Emma Jiménez', '0998901234'),
+('Mateo Flores', '0984321098'),
+('Mía Guzmán', '0991111111'),
+('Lucas Ramírez', '0992222222');
+
+INSERT INTO Cliente (nombre) VALUES
+('Lorena Lopez')
