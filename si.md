@@ -267,23 +267,30 @@ INSERT INTO Empleado (nombre, cargo) VALUES
 ('Roberto Moreno', 'Barista'),
 ('Laura Vega', 'Cajera'),
 ('Javier Salazar', 'Gerente'),
-('Patricia Núñez', 'Barista'),
+('Patricia Nunez', 'Barista'),
 ('Fernando Silva', 'Cajero'),
 ('Claudia Rojas', 'Mesera'),
 ('Ricardo Medina', 'Barista'),
-('Mónica Paredes', 'Cajera'),
+('Monica Paredes', 'Cajera'),
 ('Esteban Delgado', 'Cocinero'),
 ('Daniela Molina', 'Mesera'),
-('Alejandro Ríos', 'Barista'),
-('Verónica Campos', 'Cajera'),
-('Raúl Guerrero', 'Supervisor'),
-('Teresa Navarro', 'Barista'),
-('Hugo Peña', 'Mesero'),
-('Gloria Marín', 'Cajera'),
-('Óscar Reyes', 'Barista'),
-('Adriana Luna', 'Mesera'),
-('Víctor Díaz', 'Cocinero'),
-('Sandra Ibarra', 'Cajera');
+('Alejandro Rios', 'Barista');
+
+
+INSERT INTO Empleado (nombre, cargo, telefono) VALUES
+('Veronica Campos', 'Cajera', '555-3344'),
+('Raul Guerrero', 'Supervisor', '555-5566'),
+('Teresa Navarro', 'Barista', '555-7788'),
+('Hugo Peña', 'Mesero', '555-9900'),
+('Gloria Marin', 'Cajera', '555-2211'),
+('Oscar Reyes', 'Barista', '555-4433'),
+('Adriana Luna', 'Mesera', '555-6655'),
+('Victor Diaz', 'Cocinero', '555-8877'),
+('Sandra Ibarra', 'Cajera', '555-0099'),
+('Pablo Torres', 'Barista', '555-3345'),
+('Natalia Flores', 'Mesera', '555-5567');
+
+
 ```
 
 ---
@@ -292,25 +299,25 @@ INSERT INTO Empleado (nombre, cargo) VALUES
 
 ```sql
 INSERT INTO Producto (nombre, precio, categoria) VALUES
-('Café Americano', 2.50, 'Bebidas Calientes'),
+('Cafe Americano', 2.50, 'Bebidas Calientes'),
 ('Cappuccino', 3.50, 'Bebidas Calientes'),
 ('Latte', 3.80, 'Bebidas Calientes'),
 ('Espresso', 2.00, 'Bebidas Calientes'),
 ('Mocha', 4.00, 'Bebidas Calientes'),
-('Té Verde', 2.20, 'Bebidas Calientes'),
+('Te Verde', 2.20, 'Bebidas Calientes'),
 ('Chocolate Caliente', 3.00, 'Bebidas Calientes'),
-('Jugo Natural', 3.50, 'Bebidas Frías'),
-('Smoothie', 4.50, 'Bebidas Frías'),
-('Limonada', 2.50, 'Bebidas Frías'),
-('Croissant', 2.80, 'Panadería'),
+('Jugo Natural', 3.50, 'Bebidas Frias'),
+('Smoothie', 4.50, 'Bebidas Frias'),
+('Limonada', 2.50, 'Bebidas Frias'),
+('Croissant', 2.80, 'Panaderia'),
 ('Brownie', 3.20, 'Postres'),
 ('Cheesecake', 4.50, 'Postres'),
 ('Galletas', 1.80, 'Postres'),
-('Sándwich de Pollo', 5.50, 'Comida'),
-('Ensalada César', 6.00, 'Comida'),
+('Sandwich de Pollo', 5.50, 'Comida'),
+('Ensalada Cesar', 6.00, 'Comida'),
 ('Panini', 5.00, 'Comida'),
-('Muffin', 2.50, 'Panadería'),
-('Donas', 2.00, 'Panadería'),
+('Muffin', 2.50, 'Panaderia'),
+('Donas', 2.00, 'Panaderia'),
 ('Waffle', 4.80, 'Postres');
 ```
 
@@ -320,26 +327,26 @@ INSERT INTO Producto (nombre, precio, categoria) VALUES
 
 ```sql
 INSERT INTO Venta (fecha, id_Cliente, id_Empleado) VALUES
-('2024-11-20 08:30:00', 1, 1),
-('2024-11-20 09:15:00', 2, 2),
-('2024-11-20 10:00:00', 3, 1),
-('2024-11-20 10:45:00', 4, 3),
-('2024-11-20 11:30:00', 5, 4),
-('2024-11-20 12:15:00', 6, 2),
-('2024-11-20 13:00:00', 7, 5),
-('2024-11-20 14:30:00', 8, 1),
-('2024-11-20 15:15:00', 9, 6),
-('2024-11-20 16:00:00', 10, 4),
-('2024-11-21 08:45:00', 11, 7),
-('2024-11-21 09:30:00', 12, 2),
-('2024-11-21 10:15:00', 13, 8),
-('2024-11-21 11:00:00', 14, 3),
-('2024-11-21 12:30:00', 15, 9),
-('2024-11-21 13:45:00', 16, 5),
-('2024-11-21 14:30:00', 17, 10),
-('2024-11-21 15:15:00', 18, 1),
-('2024-11-21 16:00:00', 19, 2),
-('2024-11-21 17:00:00', 20, 4);
+('2025-11-20 08:30', 1, 1),
+('2025-11-20 09:15', 2, 2),
+('2025-11-20 10:00', 3, 1),
+('2025-11-20 10:45', 4, 3),
+('2025-11-20 11:30', 5, 4),
+('2025-11-20 12:15', 6, 2),
+('2025-11-20 13:00', 7, 5),
+('2025-11-20 14:30', 8, 1),
+('2025-11-20 15:15', 9, 6),
+('2025-11-20 16:00', 10, 4),
+('2025-11-21 08:45', 11, 7),
+('2025-11-21 09:30', 12, 2),
+('2025-11-21 10:15', 13, 8),
+('2025-11-21 11:00', 14, 3),
+('2025-11-21 12:30', 15, 9),
+('2025-11-21 13:45', 16, 5),
+('2025-11-21 14:30', 17, 10),
+('2025-11-21 15:15', 18, 1),
+('2025-11-21 16:00', 19, 2),
+('2025-11-21 17:00', 20, 4);
 ```
 
 ---
@@ -347,34 +354,36 @@ INSERT INTO Venta (fecha, id_Cliente, id_Empleado) VALUES
 ## **Inserción de Detalles de Venta (27 registros)**
 
 ```sql
+--calcular manualmente los subtotales de cada detalle de venta
 INSERT INTO DetalleVenta (id_Venta, id_Producto, cantidad, subtotal) VALUES
-(1, 1, 2, 5.00),
-(1, 11, 1, 2.80),
-(2, 2, 1, 3.50),
-(2, 12, 2, 6.40),
-(3, 3, 1, 3.80),
-(3, 14, 3, 5.40),
-(4, 5, 1, 4.00),
-(4, 15, 1, 5.50),
-(5, 8, 2, 7.00),
-(6, 1, 1, 2.50),
-(6, 13, 1, 4.50),
-(7, 7, 2, 6.00),
-(8, 4, 3, 6.00),
-(9, 9, 1, 4.50),
-(9, 20, 1, 4.80),
-(10, 6, 1, 2.20),
-(10, 16, 1, 6.00),
-(11, 2, 2, 7.00),
-(12, 10, 1, 2.50),
-(13, 17, 1, 5.00),
-(14, 3, 1, 3.80),
-(15, 19, 2, 4.00),
-(16, 5, 1, 4.00),
-(17, 1, 1, 2.50),
-(18, 18, 2, 5.00),
-(19, 15, 1, 5.50),
-(20, 12, 1, 3.20);
+(1, 1, 2, 5.00),        -- Café Americano 2 x 2.50
+(1, 11, 1, 2.80),       -- Croissant 1 x 2.80
+(2, 2, 1, 3.50),        -- Cappuccino 1 x 3.50
+(2, 12, 2, 6.40),       -- Brownie 2 x 3.20
+(3, 3, 1, 3.80),        -- Latte 1 x 3.80
+(3, 14, 3, 5.40),       -- Galletas 3 x 1.80
+(4, 5, 1, 4.00),        -- Mocha 1 x 4.00
+(4, 15, 1, 5.50),       -- Sándwich de Pollo 1 x 5.50
+(5, 8, 2, 7.00),        -- Jugo Natural 2 x 3.50
+(6, 1, 1, 2.50),        -- Café Americano 1 x 2.50
+(6, 13, 1, 4.50),       -- Cheesecake 1 x 4.50
+(7, 7, 2, 6.00),        -- Chocolate Caliente 2 x 3.00
+(8, 4, 3, 6.00),        -- Espresso 3 x 2.00
+(9, 9, 1, 4.50),        -- Smoothie 1 x 4.50
+(9, 20, 1, 4.80),       -- Waffle 1 x 4.80
+(10, 6, 1, 2.20),       -- Té Verde 1 x 2.20
+(10, 16, 1, 6.00),      -- Ensalada César 1 x 6.00
+(11, 2, 2, 7.00),       -- Cappuccino 2 x 3.50
+(12, 10, 1, 2.50),      -- Limonada 1 x 2.50
+(13, 17, 1, 5.00),      -- Panini 1 x 5.00
+(14, 3, 1, 3.80),       -- Latte 1 x 3.80
+(15, 19, 2, 5.00),      -- Donas 2 x 2.50
+(16, 5, 1, 4.00),       -- Mocha 1 x 4.00
+(17, 1, 1, 2.50),       -- Café Americano 1 x 2.50
+(18, 18, 2, 5.00),      -- Muffin 2 x 2.50
+(19, 15, 1, 5.50),      -- Sándwich de Pollo 1 x 5.50
+(20, 12, 1, 3.20);      -- Brownie 1 x 3.20
+
 ```
 
 ---
