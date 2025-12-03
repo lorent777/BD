@@ -30,5 +30,13 @@ INSERT INTO Venta_Compra(fecha, id_Cliente, id_Empleado) VALUES
 INSERT INTO Venta_Compra(fecha, id_Cliente, id_Empleado) VALUES
 ('2025-12-22 16:00', 1, 1);
 
+INSERT INTO Venta_Compra(fecha, id_Cliente, id_Empleado) VALUES
+('2025-03-12 14:00', 21, 2); 
+
+INSERT INTO Venta_Compra(fecha, id_Cliente, id_Empleado) VALUES
+('2025-04-15 11:30', 21, 2),
+('2025-05-18 09:45', 22, 3),
+('2025-06-20 13:15', 22,4);
+
 
 

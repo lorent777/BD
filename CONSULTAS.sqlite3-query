@@ -8,6 +8,23 @@ SELECT nombre, telefono
 FROM Cliente
 WHERE telefono IS NULL;
 
+
+SELECT 
+    Producto.nombre AS ProductoComprado,
+    DetalleVenta.cantidad AS Cantidad,
+    DetalleVenta.subtotal AS Subtotal
+FROM Cliente
+JOIN Venta_Compra
+    ON Cliente.id_Cliente = Venta_Compra.id_Cliente
+JOIN DetalleVenta
+    ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta_Compra
+JOIN Producto
+    ON DetalleVenta.id_Producto = Producto.id_Producto
+WHERE Cliente.nombre = 'Lorena López';
+
+
+
+
 -- isa
 SELECT nombre FROM Producto
 ORDER BY nombre;
@@ -82,6 +99,7 @@ WHERE Producto.categoria = 'Panaderia'
     AND DetalleVenta.cantidad >= 1
     AND Venta_Compra.fecha >= '2025-11-20'
 ORDER BY Venta_Compra.fecha DESC, DetalleVenta.cantidad DESC;
+
 
 
 
