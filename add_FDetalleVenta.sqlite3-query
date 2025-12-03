@@ -33,6 +33,29 @@ INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALU
 INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALUES
 (10, 2,1,3.50);
 
+INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALUES
+(10, 2,1,3.50);
+
+-- Venta de Lorena Loez (id_Cliente = 21, id_Venta_Compra = 1)
+INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALUES
+(22, 1, 3, 3.8), --laatee
+(23, 11,2 ,5.60); -- croisant
+
+-- Segunda venta de Lorena López (id_Cliente = 21, id_Venta_Compra = 2)
+INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALUES
+(2, 5, 1, 4.00),   -- Mocha
+(2, 12, 1, 3.20);  -- Brownie
+
+-- Primera venta de otro cliente (id_Cliente = 22, id_Venta_Compra = 3)
+INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALUES
+(3, 8, 2, 7.00),   -- Jugo Natural
+(3, 15, 1, 5.50);  -- Sándwich de Pollo
+
+-- Segunda venta de cliente 22 (id_Cliente = 22, id_Venta_Compra = 4)
+INSERT INTO DetalleVenta (id_Venta_Compra, id_Producto, cantidad, subtotal) VALUES
+(4, 1, 1, 2.50),   -- Café Americano
+(4, 19, 2, 4.00);  -- Donas
+
 
 
 
