@@ -22,3 +22,7 @@ INSERT INTO Producto (nombre, precio, categoria) VALUES
 ('Donas', 2.00, 'Panaderia'),
 ('Waffle', 4.80, 'Postres');
 
+INSERT INTO Producto (id_Producto, nombre, precio, categoria) VALUES
+(29, 'Agua Mineral', 1.50, 'Bebidas Frias'),
+(23, 'Té Helado', 2.80, 'Bebidas Frias');
+

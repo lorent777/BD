@@ -21,8 +21,8 @@ CREATE TABLE Producto (
     categoria TEXT NOT NULL
 );
 
-CREATE TABLE Venta (
-    id_Venta INTEGER PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE Venta_Compra (
+    id_Venta_Compra INTEGER PRIMARY KEY AUTOINCREMENT,
     fecha TEXT NOT NULL,
     id_Cliente INTEGER NOT NULL,
     id_Empleado INTEGER NOT NULL,
