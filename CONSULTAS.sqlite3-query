@@ -47,12 +47,16 @@ JOIN Venta_Compra
 GROUP BY Cliente.nombre
 HAVING COUNT(Venta_Compra.id_Venta_Compra) > 1;
 
-SELECT Cliente.nombre AS clienteUWU,Empleado.nombre AS EmpleadoUWU, Producto.nombre AS ProductoUWU
-FROM Cliente 
-JOIN Empleado
-    ON Cliente.id_Cliente = Empleado.id_Empleado
-JOIN Producto
-    ON Empleado.id_Empleado = Producto.id_Producto;
+SELECT 
+    Cliente.nombre AS clienteUWU,
+    Empleado.nombre AS empleadoUWU,
+    Producto.nombre AS productoUWU
+FROM Cliente
+JOIN Venta_Compra ON Cliente.id_Cliente = Venta_Compra.id_Cliente
+JOIN Empleado ON Venta_Compra.id_Empleado = Empleado.id_Empleado
+JOIN DetalleVenta ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta_Compra
+JOIN Producto ON DetalleVenta.id_Producto = Producto.id_Producto;
+
 
 
 -- isa - join y group
