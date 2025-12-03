@@ -32,10 +32,10 @@ CREATE TABLE Venta_Compra (
 
 CREATE TABLE DetalleVenta (
     id_Detalle INTEGER PRIMARY KEY AUTOINCREMENT,
-    id_Venta INTEGER NOT NULL,
+    id_Venta_Compra  NOT NULL,
     id_Producto INTEGER NOT NULL,
     cantidad INTEGER NOT NULL,
     subtotal REAL NOT NULL,
-    FOREIGN KEY (id_Venta) REFERENCES Venta(id_Venta),
+    FOREIGN KEY (id_Venta_Compra)REFERENCES Venta_Compra(id_Venta_Compra) 
     FOREIGN KEY (id_Producto) REFERENCES Producto(id_Producto)
 );
