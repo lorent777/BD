@@ -63,7 +63,7 @@ FROM Empleado
 JOIN Venta_Compra 
     ON Empleado.id_Empleado = Venta_Compra.id_Empleado
 JOIN DetalleVenta 
-    ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta
+    ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta_Compra
 GROUP BY Empleado.nombre;
 
 SELECT 
@@ -75,7 +75,7 @@ SELECT
     Producto.precio
 FROM Venta_Compra
 JOIN DetalleVenta 
-    ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta
+    ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta_Compra
 JOIN Producto 
     ON DetalleVenta.id_Producto = Producto.id_Producto
 WHERE Producto.categoria = 'Panaderia'
