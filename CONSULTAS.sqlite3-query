@@ -38,14 +38,18 @@ HAVING MAX(Venta_Compra.id_Venta_Compra) > 5;
 
 -- karo - join y having - COUNT
 
+
 SELECT 
-    Cliente.nombre AS Cliente,
-    COUNT(Venta_Compra.id_Venta_Compra) AS TotalCompras
-FROM Cliente
+    Empleado.nombre AS Empleado,
+    COUNT(Venta_Compra.id_Venta_Compra) AS TotalVentas
+FROM Empleado
 JOIN Venta_Compra
-    ON Cliente.id_Cliente = Venta_Compra.id_Cliente
-GROUP BY Cliente.nombre
-HAVING COUNT(Venta_Compra.id_Venta_Compra) > 1;
+    ON Empleado.id_Empleado = Venta_Compra.id_Empleado
+GROUP BY Empleado.nombre
+ORDER BY TotalVentas DESC;
+
+
+
 
 SELECT 
     Cliente.nombre AS clienteUWU,
@@ -70,6 +74,8 @@ JOIN Venta_Compra
 JOIN DetalleVenta 
     ON Venta_Compra.id_Venta_Compra = DetalleVenta.id_Venta_Compra
 GROUP BY Empleado.nombre;
+
+
 
 SELECT 
     Venta_Compra.id_Venta_Compra AS Venta,
